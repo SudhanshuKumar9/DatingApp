@@ -11,11 +11,11 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
         private readonly IUserRepo _userRepo;
 
-        public UserController(IUserRepo user)
+        public UsersController(IUserRepo user)
         {
             _userRepo = user;
         }
